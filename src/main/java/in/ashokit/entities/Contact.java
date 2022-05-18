@@ -8,10 +8,10 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="CONTACT_DTLS")
+@Table(name = "CONTACT_DTLS")
 @Data
 public class Contact {
-    
+
 	@Id
 	@GeneratedValue
 	private int cid;
@@ -19,5 +19,5 @@ public class Contact {
 	private String email;
 	private long phno;
 	private String activeSw;
-	
+
 }

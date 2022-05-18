@@ -11,7 +11,7 @@ import in.ashokit.repository.ContactRepository;
 
 @Service
 public class ContactServiceImpl implements ContactService {
-	
+
 	@Autowired
 	private ContactRepository repo;
 
@@ -23,13 +23,13 @@ public class ContactServiceImpl implements ContactService {
 
 	@Override
 	public List<Contact> getAllContacts() {
-		return repo.findAll();	
+		return repo.findAll();
 	}
 
 	@Override
 	public Contact getContact(int cid) {
 		Optional<Contact> findById = repo.findById(cid);
-		if(findById.isPresent()) {
+		if (findById.isPresent()) {
 			return findById.get();
 		}
 		return null;
