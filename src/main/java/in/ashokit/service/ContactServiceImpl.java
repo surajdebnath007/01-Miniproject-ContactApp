@@ -17,7 +17,7 @@ public class ContactServiceImpl implements ContactService {
 
 	@Override
 	public String upsert(Contact contact) {
-		Contact save = repo.save(contact);
+		repo.save(contact);
 		return "SUCCESS";
 	}
 

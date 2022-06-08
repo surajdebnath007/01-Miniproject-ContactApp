@@ -6,11 +6,11 @@ import in.ashokit.entities.Contact;
 
 public interface ContactService {
 
-	String upsert(Contact contact);
+	public String upsert(Contact contact);
 
-	List<Contact> getAllContacts();
+	public List<Contact> getAllContacts();
 
-	Contact getContact(int cid);
+	public Contact getContact(int cid);
 
-	String deleteContact(int cid);
+	public String deleteContact(int cid);
 }
